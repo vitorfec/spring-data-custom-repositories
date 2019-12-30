@@ -18,15 +18,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-
-  deploy:
-    needs: build
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deployment Action
-        uses: chrnorm/deployment-action@v1.1.1
-        with:
-          # Github repository token
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Deployment
+      uses: chrnorm/deployment-action@v1.1.1
+      with:
+        # Github repository token
+        token: ${{ secrets.GITHUB_TOKEN }}
