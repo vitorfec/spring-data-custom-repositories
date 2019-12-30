@@ -22,4 +22,4 @@ jobs:
       uses: chrnorm/deployment-action@v1.1.1
       with:
         # Github repository token
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
