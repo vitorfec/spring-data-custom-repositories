@@ -64,14 +64,6 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub vitorfec Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/vitorfec/spring-data-custom-repositories</url>
-        </repository>
-    </distributionManagement>
-
     <repositories>
         <repository>
             <id>spring-libs-snapshot</id>
