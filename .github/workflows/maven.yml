@@ -15,13 +15,18 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-  
-  deploy:
-    runs-on: ubuntu-latest
+    - name: Upload artifact
+        run: mvn --settings settings.xml --file pom.xml deploy -X -DskipTests=true
+        env:
+          GITHUB_USERNAME: x-access-token
+          GITHUB_PASSWORD: ${{ secrets.GITHUB_ACCESS_TOKEN }}
 
-    steps:
-    - name: Deployment Action
-      uses: chrnorm/deployment-action@v1.1.1
-      with:
-        # Github repository token
-        token: ${{ secrets.GITHUB_TOKEN }}
+#  deploy:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#    - name: Deployment Action
+#      uses: chrnorm/deployment-action@v1.1.1
+#      with:
+#        # Github repository token
+#        token: ${{ secrets.GITHUB_TOKEN }}
