@@ -14,7 +14,7 @@
 
     <properties>
         <java-module-name>spring.data.custom.repositories</java-module-name>
-        <spring-data-commons.version>2.3.0.BUILD-SNAPSHOT</spring-data-commons.version>
+        <spring-data-commons.version>2.2.3.RELEASE</spring-data-commons.version>
     </properties>
 
     <dependencies>
