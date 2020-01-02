@@ -1,0 +1,33 @@
+= Spring Data Custom Repositories
+
+Spring Data Commons extension with custom repositories like ReadOnlyRepository.
+
+== Getting Started
+
+=== Maven configuration
+
+Add the Maven dependency and the repository:
+
+[source,xml]
+----
+<dependency>
+  <groupId>org.springframework.data</groupId>
+  <artifactId>spring-data-custom-repositories</artifactId>
+  <version>1.0.0-snapshot</version>
+</dependency>
+    
+<repository>
+  <id>github</id>
+  <name>GitHub vitorfec Apache Maven Packages</name>
+  <url>https://maven.pkg.github.com/vitorfec/spring-data-custom-repositories</url>
+</repository>
+----
+
+== Building from Source
+
+You  will need JDK 1.8 and https://maven.apache.org/run-maven/index.html[Maven v3.5.0 or above].
+
+[source,bash]
+----
+ $ mvn clean install
+----
