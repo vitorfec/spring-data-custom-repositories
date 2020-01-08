@@ -13,7 +13,7 @@ Add the Maven dependency and the repository:
 <dependency>
   <groupId>org.springframework.data</groupId>
   <artifactId>spring-data-custom-repositories</artifactId>
-  <version>1.0.0</version>
+  <version>0.0.1-SNAPSHOT</version>
 </dependency>
     
 <repository>
