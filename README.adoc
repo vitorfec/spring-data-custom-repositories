@@ -13,9 +13,9 @@ Add the Maven dependency and the repository:
 <dependency>
   <groupId>org.springframework.data</groupId>
   <artifactId>spring-data-custom-repositories</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-RELEASE</version>
 </dependency>
-    
+
 <repository>
   <id>github</id>
   <name>GitHub vitorfec Apache Maven Packages</name>
