@@ -8,7 +8,7 @@
     </parent>
     <groupId>org.springframework.data</groupId>
     <artifactId>spring-data-custom-repositories</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>Spring Data Custom Repositories</name>
     <description>Spring Data Commons extension with custom repositories</description>
 
