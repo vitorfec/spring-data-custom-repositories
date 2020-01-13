@@ -20,12 +20,15 @@ jobs:
     - name: Build
       run: mvn -B package --file pom.xml
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy
-        uses: chrnorm/deployment-action@v1.1.1
-        with:
-          # Github repository token
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Deploy
+      run: mvn -B deploy --file pom.xml
+
+#  deploy:
+#    runs-on: ubuntu-latest
+#    needs: build
+#    steps:
+#      - name: Deploy
+#        uses: chrnorm/deployment-action@v1.1.1
+#        with:
+#          # Github repository token
+#          token: ${{ secrets.GITHUB_TOKEN }}

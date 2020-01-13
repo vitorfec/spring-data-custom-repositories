@@ -8,7 +8,7 @@
     </parent>
     <groupId>org.springframework.data</groupId>
     <artifactId>spring-data-custom-repositories</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>Spring Data Custom Repositories</name>
     <description>Spring Data Commons extension with custom repositories</description>
 
@@ -68,11 +68,6 @@
         <repository>
             <id>spring-libs-snapshot</id>
             <url>https://repo.spring.io/libs-snapshot</url>
-        </repository>
-        <repository>
-            <id>github</id>
-            <name>GitHub vitorfec Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/vitorfec/spring-data-custom-repositories</url>
         </repository>
     </repositories>
 
