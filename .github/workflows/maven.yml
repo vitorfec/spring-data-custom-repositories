@@ -22,8 +22,6 @@ jobs:
 
     - name: Deploy
       env:
-        GITHUB_USERNAME: x-access-token
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        echo "<settings><servers><server><id>github</id><username>${GITHUB_USERNAME}</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
-        mvn deploy
+#        GITHUB_ACTOR: x-access-token
+        GITHUB_TOKEN: ${{ github.token }}
+      run: mvn deploy
